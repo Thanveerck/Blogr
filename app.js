@@ -16,6 +16,8 @@ if(nav.classList.contains("showMenu")){
     nav.classList.add("showMenu");
     closeBtn.style.display = 'block';
     burger.style.display = 'none';
+    closeBtn.classList.add("show-close_btn");
+    
 }
 
 

@@ -24,7 +24,7 @@ body {
   font-family: $ff-primary;
 }
 .bg-container {
-  height: 80vh;
+  min-height: 85vh;
   width: 100%;
   background: url("../images/bg-pattern-intro-mobile.svg"),
     linear-gradient(to bottom right, #ff8a70, #ff4658);
@@ -35,35 +35,31 @@ body {
   z-index: -1;
 }
 .hero-container {
-  width: 100%;
-  height: 100vh;
-  // position: relative;// for navigation
-
-  // to make the items in center of bg
-  //making grid to hero section
   .hero-grid {
-    height: 80vh;
     display: grid;
     grid-template-columns: 1.31em 1fr 1.31em;
-    grid-template-areas: ". content .";
+    grid-template-rows: 10vh 1fr;
+    grid-template-areas:
+      ". heading ."
+      ". content .";
+    min-height: 85vh;
   }
   .hero-wrapper {
     grid-area: content;
+    margin: auto;
   }
 }
 
 //mobile nav
 header {
+  grid-area: heading;
   display: flex;
-  margin: 3.1em 0;
+  align-items: flex-end;
   font-family: $ff-secondary;
   justify-content: space-between;
 
   .hamburger {
     cursor: pointer;
-    position: fixed;
-    right: 7%;
-    top: 6%;
   }
 
   .close-btn {
@@ -73,6 +69,13 @@ header {
       fill: white;
     }
   }
+
+  .show-close_btn {
+    position: fixed;
+    top: 6%;
+    right: 7%;
+  }
+
   .burger {
     path {
       stroke: white;
@@ -155,11 +158,12 @@ header {
 
 .hero-texts {
   text-align: center;
-  width: 84%;
-  margin: 7em auto;
+  max-height: 100vh;
+  margin: auto;
 
   .hero-title {
     color: $color-text-white;
+    font-size: calc(1 rem + 3vw);
   }
 
   .hero-para {
@@ -172,7 +176,7 @@ header {
     display: inline-block;
     padding: 0.9em 1.5em;
     font-size: 0.9rem;
-    margin-top: 3em;
+
     border-radius: 2em;
     font-family: $ff-secondary;
     font-weight: 700;
@@ -180,31 +184,34 @@ header {
   .b1 {
     background: $color-text-white;
     color: $color-btn-text;
-    margin-inline-end: 1em;
+    margin-inline-end: 0.5em;
   }
   .b2 {
     border: 1px solid $color-text-white;
     color: $color-text-white;
   }
 }
+.hero-cta {
+  margin-top: 3em;
+}
 
+.section {
+  margin: 6em 0;
+}
 // section 2
 
-.col-1,
-.col-3 {
-  margin: 1em 1.31em;
-
+.col1,
+.col3 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 2em;
 }
 .col-1-paraItems {
   line-height: 1.7em;
   width: 90%;
   margin: 1.5em auto;
   h2 {
-    width: 70%;
+    width: 80%;
     font-size: 1.6rem;
     margin: 1.4em auto 1em auto;
     overflow: hidden;
@@ -218,7 +225,7 @@ header {
 // section 2
 
 .col2-section {
-  position: relative;
+  // position: relative;
   margin: 1em 0;
   img {
     width: 100%;
@@ -232,7 +239,7 @@ header {
 
   text-align: center;
   color: $color-text-white;
-  height: 60vh;
+  min-height: 35em;
 
   background-color: #34344c;
   background-position-y: -50%;
@@ -242,27 +249,13 @@ header {
 
   // margin: 1.5em auto;
   .col2-text {
-    position: absolute;
     width: 90%;
-    inset: 0;
-    margin: 0 auto;
-    top: 50%;
+    margin: 50% auto;
 
     h2 {
       width: 70%;
       margin: 2em auto 1em auto;
       font-size: 1.7rem;
-    }
-  }
-}
-
-.col-3 {
-  margin-top: 2em;
-  gap: 0;
-
-  .col-1-paraItems {
-    h2 {
-      margin: 0 auto 1em auto;
     }
   }
 }

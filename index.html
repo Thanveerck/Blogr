@@ -23,68 +23,70 @@
     <div class="bg-container"></div>
     <div class="hero-container">
       <div class="hero-grid">
+        <header>
+          <div class="logo">
+            <img src="./images/logo.svg" alt="blogr logo" />
+          </div>
+          <div class="navigation">
+            <ul class="nav-items">
+              <li class="menu-items">Product</li>
+              <li class="menu-items">Service</li>
+              <li class="menu-items">Connect</li>
+            </ul>
+            <div class="hr-line"></div>
+            <div class="nav-btn">
+              <button class="login menu-items">Log In</button>
+              <button class="signup menu-items">Signup</button>
+            </div>
+          </div>
+          <div class="hamburger">
+            <svg
+              class="burger"
+              width="25"
+              height="25"
+              viewBox="0 0 36 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 26H34M2 2H34H2ZM2 14H34H2Z"
+                stroke="black"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              class="close-btn"
+              width="25"
+              height="26"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.4731 15L29.9096 0.602761C30.1181 0.363497 29.9428 0 29.6206 0H25.8399C25.6172 0 25.404 0.0966256 25.2572 0.26227L15 12.138L4.74284 0.26227C4.60071 0.0966256 4.38751 0 4.1601 0H0.379397C0.0572324 0 -0.118064 0.363497 0.0903962 0.602761L12.5269 15L0.0903962 29.3972C0.0436993 29.4506 0.0137415 29.5158 0.00407824 29.5852C-0.00558498 29.6545 0.00545231 29.7251 0.0358809 29.7886C0.0663094 29.8521 0.114851 29.9057 0.175742 29.9432C0.236632 29.9807 0.307315 30.0004 0.379397 30H4.1601C4.38277 30 4.59597 29.9034 4.74284 29.7377L15 17.862L25.2572 29.7377C25.3993 29.9034 25.6125 30 25.8399 30H29.6206C29.9428 30 30.1181 29.6365 29.9096 29.3972L17.4731 15Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </header>
         <div class="hero-wrapper">
-          <header>
-            <div class="logo">
-              <img src="./images/logo.svg" alt="blogr logo" />
-            </div>
-            <div class="navigation">
-              <ul class="nav-items">
-                <li class="menu-items">Product</li>
-                <li class="menu-items">Service</li>
-                <li class="menu-items">Connect</li>
-              </ul>
-              <div class="hr-line"></div>
-              <div class="nav-btn">
-                <button class="login menu-items">Log In</button>
-                <button class="signup menu-items">Signup</button>
-              </div>
-            </div>
-            <div class="hamburger">
-              <svg
-                class="burger"
-                width="25"
-                height="21"
-                viewBox="0 0 36 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2 26H34M2 2H34H2ZM2 14H34H2Z"
-                  stroke="black"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <svg
-                class="close-btn"
-                width="25"
-                height="26"
-                viewBox="0 0 30 30"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.4731 15L29.9096 0.602761C30.1181 0.363497 29.9428 0 29.6206 0H25.8399C25.6172 0 25.404 0.0966256 25.2572 0.26227L15 12.138L4.74284 0.26227C4.60071 0.0966256 4.38751 0 4.1601 0H0.379397C0.0572324 0 -0.118064 0.363497 0.0903962 0.602761L12.5269 15L0.0903962 29.3972C0.0436993 29.4506 0.0137415 29.5158 0.00407824 29.5852C-0.00558498 29.6545 0.00545231 29.7251 0.0358809 29.7886C0.0663094 29.8521 0.114851 29.9057 0.175742 29.9432C0.236632 29.9807 0.307315 30.0004 0.379397 30H4.1601C4.38277 30 4.59597 29.9034 4.74284 29.7377L15 17.862L25.2572 29.7377C25.3993 29.9034 25.6125 30 25.8399 30H29.6206C29.9428 30 30.1181 29.6365 29.9096 29.3972L17.4731 15Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-          </header>
           <div class="hero-texts">
             <h1 class="hero-title">A modern publishing platform</h1>
             <p class="hero-para">
               Grow your audience and build your online brand
             </p>
-            <a href="" class="hero-main-btn b1">Start for Free</a>
-            <a href="" class="hero-main-btn b2">Learn More</a>
+            <div class="hero-cta">
+              <a href="" class="hero-main-btn b1">Start for Free</a>
+              <a href="" class="hero-main-btn b2">Learn More</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- section 2 -->
-    <section class="col-1">
+    <section class="section col1">
       <h2 class="col-1-title">Designed for the future</h2>
       <img src="./images/illustration-editor-mobile.svg" alt="" />
       <div class="col-1-para">
@@ -113,7 +115,7 @@
 
     <!-- section phone col2 -->
 
-    <section class="col2-section">
+    <section class="section col2-section">
       <img src="./images/illustration-phones.svg" alt="" />
       <div class="col2">
         <div class="col2-text">
@@ -128,7 +130,7 @@
       </div>
     </section>
 
-    <section class="col-3">
+    <section class="section col3">
       <img src="./images/illustration-laptop-mobile.svg" alt="" />
       <div class="col-1-para">
         <div class="col-1-paraItems">
