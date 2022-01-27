@@ -59,6 +59,9 @@ header {
 
 header .hamburger {
   cursor: pointer;
+  position: fixed;
+  right: 7%;
+  top: 6%;
 }
 
 header .close-btn {
@@ -84,7 +87,9 @@ header .burger path {
 .navigation {
   background: white;
   position: fixed;
-  top: 10%;
+  top: 12%;
+  left: 5%;
+  right: 5%;
   width: 90%;
   height: 80%;
   display: -webkit-box;
