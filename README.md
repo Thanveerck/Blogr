@@ -1,5 +1,7 @@
 # Frontend Mentor - Blogr landing page
 
+Live Site : https://thanveerck.github.io/Blogr/
+
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
